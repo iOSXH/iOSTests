@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBC500071CBB545700843C93 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500041CBB545700843C93 /* GCDTest.m */; };
+		BBC500081CBB545700843C93 /* RuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500061CBB545700843C93 /* RuntimeTest.m */; };
+		BBC5000B1CBB549C00843C93 /* KVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5000A1CBB549C00843C93 /* KVOTest.m */; };
+		BBC5000E1CBB7D3800843C93 /* XHLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5000D1CBB7D3800843C93 /* XHLogHelper.m */; };
+		BBC500111CBB8C6B00843C93 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500101CBB8C6B00843C93 /* BlockTest.m */; };
+		BBC500141CBB8D0800843C93 /* RunLoopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500131CBB8D0800843C93 /* RunLoopTest.m */; };
 		BBC5FFBD1CBB3A1C00843C93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5FFBC1CBB3A1C00843C93 /* main.m */; };
 		BBC5FFC01CBB3A1C00843C93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5FFBF1CBB3A1C00843C93 /* AppDelegate.m */; };
 		BBC5FFC31CBB3A1C00843C93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5FFC21CBB3A1C00843C93 /* ViewController.m */; };
@@ -15,6 +21,9 @@
 		BBC5FFCB1CBB3A1C00843C93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC5FFC91CBB3A1C00843C93 /* LaunchScreen.storyboard */; };
 		BBC5FFD61CBB3A1C00843C93 /* iOSTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5FFD51CBB3A1C00843C93 /* iOSTestsTests.m */; };
 		BBC5FFE11CBB3A1C00843C93 /* iOSTestsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5FFE01CBB3A1C00843C93 /* iOSTestsUITests.m */; };
+		BBC5FFF51CBB3C2900843C93 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5FFF41CBB3C2900843C93 /* Person.m */; };
+		BBC5FFF81CBB3D9200843C93 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5FFF71CBB3D9200843C93 /* Student.m */; };
+		BBC5FFFB1CBB3E4000843C93 /* Person+xh.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5FFFA1CBB3E4000843C93 /* Person+xh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BBC500031CBB545700843C93 /* GCDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
+		BBC500041CBB545700843C93 /* GCDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
+		BBC500051CBB545700843C93 /* RuntimeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTest.h; sourceTree = "<group>"; };
+		BBC500061CBB545700843C93 /* RuntimeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTest.m; sourceTree = "<group>"; };
+		BBC500091CBB549C00843C93 /* KVOTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOTest.h; sourceTree = "<group>"; };
+		BBC5000A1CBB549C00843C93 /* KVOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOTest.m; sourceTree = "<group>"; };
+		BBC5000C1CBB7D3800843C93 /* XHLogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLogHelper.h; sourceTree = "<group>"; };
+		BBC5000D1CBB7D3800843C93 /* XHLogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLogHelper.m; sourceTree = "<group>"; };
+		BBC5000F1CBB8C6B00843C93 /* BlockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
+		BBC500101CBB8C6B00843C93 /* BlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
+		BBC500121CBB8D0800843C93 /* RunLoopTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopTest.h; sourceTree = "<group>"; };
+		BBC500131CBB8D0800843C93 /* RunLoopTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopTest.m; sourceTree = "<group>"; };
 		BBC5FFB81CBB3A1C00843C93 /* iOSTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC5FFBC1CBB3A1C00843C93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBC5FFBE1CBB3A1C00843C93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +72,13 @@
 		BBC5FFDC1CBB3A1C00843C93 /* iOSTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC5FFE01CBB3A1C00843C93 /* iOSTestsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSTestsUITests.m; sourceTree = "<group>"; };
 		BBC5FFE21CBB3A1C00843C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC5FFF21CBB3C1600843C93 /* TestCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCommon.h; sourceTree = "<group>"; };
+		BBC5FFF31CBB3C2900843C93 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		BBC5FFF41CBB3C2900843C93 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		BBC5FFF61CBB3D9200843C93 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		BBC5FFF71CBB3D9200843C93 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		BBC5FFF91CBB3E4000843C93 /* Person+xh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+xh.h"; sourceTree = "<group>"; };
+		BBC5FFFA1CBB3E4000843C93 /* Person+xh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+xh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBC500021CBB545700843C93 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				BBC500121CBB8D0800843C93 /* RunLoopTest.h */,
+				BBC500131CBB8D0800843C93 /* RunLoopTest.m */,
+				BBC5000F1CBB8C6B00843C93 /* BlockTest.h */,
+				BBC500101CBB8C6B00843C93 /* BlockTest.m */,
+				BBC500091CBB549C00843C93 /* KVOTest.h */,
+				BBC5000A1CBB549C00843C93 /* KVOTest.m */,
+				BBC500031CBB545700843C93 /* GCDTest.h */,
+				BBC500041CBB545700843C93 /* GCDTest.m */,
+				BBC500051CBB545700843C93 /* RuntimeTest.h */,
+				BBC500061CBB545700843C93 /* RuntimeTest.m */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
 		BBC5FFAF1CBB3A1C00843C93 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +154,7 @@
 				BBC5FFC71CBB3A1C00843C93 /* Assets.xcassets */,
 				BBC5FFC91CBB3A1C00843C93 /* LaunchScreen.storyboard */,
 				BBC5FFCC1CBB3A1C00843C93 /* Info.plist */,
+				BBC5FFEE1CBB3A3B00843C93 /* Tests */,
 				BBC5FFBB1CBB3A1C00843C93 /* Supporting Files */,
 			);
 			path = iOSTests;
@@ -138,6 +184,39 @@
 				BBC5FFE21CBB3A1C00843C93 /* Info.plist */,
 			);
 			path = iOSTestsUITests;
+			sourceTree = "<group>";
+		};
+		BBC5FFEE1CBB3A3B00843C93 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BBC500021CBB545700843C93 /* demo */,
+				BBC5FFF11CBB3AB600843C93 /* Bases */,
+				BBC5FFEF1CBB3A4600843C93 /* C */,
+				BBC5000C1CBB7D3800843C93 /* XHLogHelper.h */,
+				BBC5000D1CBB7D3800843C93 /* XHLogHelper.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BBC5FFEF1CBB3A4600843C93 /* C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		BBC5FFF11CBB3AB600843C93 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				BBC5FFF21CBB3C1600843C93 /* TestCommon.h */,
+				BBC5FFF31CBB3C2900843C93 /* Person.h */,
+				BBC5FFF41CBB3C2900843C93 /* Person.m */,
+				BBC5FFF61CBB3D9200843C93 /* Student.h */,
+				BBC5FFF71CBB3D9200843C93 /* Student.m */,
+				BBC5FFF91CBB3E4000843C93 /* Person+xh.h */,
+				BBC5FFFA1CBB3E4000843C93 /* Person+xh.m */,
+			);
+			path = Bases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +350,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBC5FFC31CBB3A1C00843C93 /* ViewController.m in Sources */,
+				BBC500071CBB545700843C93 /* GCDTest.m in Sources */,
+				BBC500111CBB8C6B00843C93 /* BlockTest.m in Sources */,
+				BBC5000B1CBB549C00843C93 /* KVOTest.m in Sources */,
 				BBC5FFC01CBB3A1C00843C93 /* AppDelegate.m in Sources */,
+				BBC5FFFB1CBB3E4000843C93 /* Person+xh.m in Sources */,
+				BBC500081CBB545700843C93 /* RuntimeTest.m in Sources */,
+				BBC500141CBB8D0800843C93 /* RunLoopTest.m in Sources */,
+				BBC5FFF81CBB3D9200843C93 /* Student.m in Sources */,
+				BBC5FFF51CBB3C2900843C93 /* Person.m in Sources */,
+				BBC5000E1CBB7D3800843C93 /* XHLogHelper.m in Sources */,
 				BBC5FFBD1CBB3A1C00843C93 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xianghui.iOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xianghui.iOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
