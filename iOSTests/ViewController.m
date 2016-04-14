@@ -69,6 +69,12 @@
         [self testIndex:index];
     }];
     
+    
+    [self.traditionalWormhole listenForMessageWithIdentifier:@"sharetest" listener:^(id messageObject) {
+        NSLog(@"shareTest === %@",messageObject);
+    }];
+    
+    
     // Become a listener for changes to the wormhole for the button message
     [self.watchConnectivityListeningWormhole listenForMessageWithIdentifier:@"test1" listener:^(id messageObject) {
         // The number is identified with the buttonNumber key in the message object
@@ -112,7 +118,7 @@
     
     NSLog(@"\n\n\n=====%@=====\n\n\n",self.title);
     
-    [self.traditionalWormhole passMessageObject:@{@"index" : @(index)} identifier:@"test"];
+    [self.traditionalWormhole passMessageObject:@{@"index" : @(index)} identifier:@"testtoday"];
     
     switch (index) {
         case 0:

@@ -41,7 +41,7 @@
                                                          optionalDirectory:@"test"];
     
     
-    id message = [self.wormhole messageWithIdentifier:@"test"];
+    id message = [self.wormhole messageWithIdentifier:@"testtoday"];
     if (message) {
         NSLog(@"test====%@",message);
         [self dealwithMessage:message];

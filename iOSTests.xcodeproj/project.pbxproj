@@ -25,6 +25,18 @@
 		BBA51E191CBF2F9600CB6602 /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E0A1CBF2F9600CB6602 /* MMWormholeSessionFileTransiting.m */; };
 		BBA51E1A1CBF2F9600CB6602 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E0C1CBF2F9600CB6602 /* MMWormholeSessionMessageTransiting.m */; };
 		BBA51E1B1CBF2F9600CB6602 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E0C1CBF2F9600CB6602 /* MMWormholeSessionMessageTransiting.m */; };
+		BBA51E261CBF5C3200CB6602 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E251CBF5C3200CB6602 /* ShareViewController.m */; };
+		BBA51E291CBF5C3200CB6602 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA51E271CBF5C3200CB6602 /* MainInterface.storyboard */; };
+		BBA51E2D1CBF5C3200CB6602 /* testShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BBA51E221CBF5C3200CB6602 /* testShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBA51E321CBF612D00CB6602 /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E001CBF2F9600CB6602 /* MMWormhole.m */; };
+		BBA51E331CBF613A00CB6602 /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E021CBF2F9600CB6602 /* MMWormholeCoordinatedFileTransiting.m */; };
+		BBA51E341CBF613A00CB6602 /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E041CBF2F9600CB6602 /* MMWormholeFileTransiting.m */; };
+		BBA51E351CBF613A00CB6602 /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E061CBF2F9600CB6602 /* MMWormholeSession.m */; };
+		BBA51E361CBF613A00CB6602 /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E081CBF2F9600CB6602 /* MMWormholeSessionContextTransiting.m */; };
+		BBA51E371CBF613A00CB6602 /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E0A1CBF2F9600CB6602 /* MMWormholeSessionFileTransiting.m */; };
+		BBA51E381CBF613A00CB6602 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E0C1CBF2F9600CB6602 /* MMWormholeSessionMessageTransiting.m */; };
+		BBA51E3B1CBF696200CB6602 /* ShareTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E3A1CBF696200CB6602 /* ShareTestViewController.m */; };
+		BBA51E3D1CBF6D4900CB6602 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA51E3C1CBF6D4900CB6602 /* MobileCoreServices.framework */; };
 		BBC500071CBB545700843C93 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500041CBB545700843C93 /* GCDTest.m */; };
 		BBC500081CBB545700843C93 /* RuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500061CBB545700843C93 /* RuntimeTest.m */; };
 		BBC5000B1CBB549C00843C93 /* KVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5000A1CBB549C00843C93 /* KVOTest.m */; };
@@ -52,6 +64,13 @@
 			remoteGlobalIDString = BBA51DEA1CBF2F4000CB6602;
 			remoteInfo = testTodayExtension;
 		};
+		BBA51E2B1CBF5C3200CB6602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBC5FFB01CBB3A1C00843C93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBA51E211CBF5C3200CB6602;
+			remoteInfo = testShareExtension;
+		};
 		BBC5FFD21CBB3A1C00843C93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BBC5FFB01CBB3A1C00843C93 /* Project object */;
@@ -75,6 +94,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				BBA51E2D1CBF5C3200CB6602 /* testShareExtension.appex in Embed App Extensions */,
 				BBA51DF91CBF2F4000CB6602 /* testTodayExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -106,6 +126,15 @@
 		BBA51E0D1CBF2F9600CB6602 /* MMWormholeTransiting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMWormholeTransiting.h; sourceTree = "<group>"; };
 		BBA51E1C1CBF2FD300CB6602 /* iOSTests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iOSTests.entitlements; sourceTree = "<group>"; };
 		BBA51E1D1CBF2FF100CB6602 /* testTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testTodayExtension.entitlements; sourceTree = "<group>"; };
+		BBA51E221CBF5C3200CB6602 /* testShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA51E241CBF5C3200CB6602 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		BBA51E251CBF5C3200CB6602 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		BBA51E281CBF5C3200CB6602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BBA51E2A1CBF5C3200CB6602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBA51E311CBF600D00CB6602 /* testShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = testShareExtension.entitlements; sourceTree = "<group>"; };
+		BBA51E391CBF696200CB6602 /* ShareTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareTestViewController.h; sourceTree = "<group>"; };
+		BBA51E3A1CBF696200CB6602 /* ShareTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareTestViewController.m; sourceTree = "<group>"; };
+		BBA51E3C1CBF6D4900CB6602 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		BBC500031CBB545700843C93 /* GCDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
 		BBC500041CBB545700843C93 /* GCDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
 		BBC500051CBB545700843C93 /* RuntimeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTest.h; sourceTree = "<group>"; };
@@ -152,6 +181,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBA51E1F1CBF5C3200CB6602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA51E3D1CBF6D4900CB6602 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBC5FFB51CBB3A1C00843C93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +216,7 @@
 		BBA51DEC1CBF2F4000CB6602 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBA51E3C1CBF6D4900CB6602 /* MobileCoreServices.framework */,
 				BBA51DED1CBF2F4000CB6602 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -218,6 +256,20 @@
 			path = MMWormhole;
 			sourceTree = "<group>";
 		};
+		BBA51E231CBF5C3200CB6602 /* testShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BBA51E311CBF600D00CB6602 /* testShareExtension.entitlements */,
+				BBA51E241CBF5C3200CB6602 /* ShareViewController.h */,
+				BBA51E251CBF5C3200CB6602 /* ShareViewController.m */,
+				BBA51E391CBF696200CB6602 /* ShareTestViewController.h */,
+				BBA51E3A1CBF696200CB6602 /* ShareTestViewController.m */,
+				BBA51E271CBF5C3200CB6602 /* MainInterface.storyboard */,
+				BBA51E2A1CBF5C3200CB6602 /* Info.plist */,
+			);
+			path = testShareExtension;
+			sourceTree = "<group>";
+		};
 		BBC500021CBB545700843C93 /* demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +294,7 @@
 				BBC5FFD41CBB3A1C00843C93 /* iOSTestsTests */,
 				BBC5FFDF1CBB3A1C00843C93 /* iOSTestsUITests */,
 				BBA51DEF1CBF2F4000CB6602 /* testTodayExtension */,
+				BBA51E231CBF5C3200CB6602 /* testShareExtension */,
 				BBA51DEC1CBF2F4000CB6602 /* Frameworks */,
 				BBC5FFB91CBB3A1C00843C93 /* Products */,
 			);
@@ -254,6 +307,7 @@
 				BBC5FFD11CBB3A1C00843C93 /* iOSTestsTests.xctest */,
 				BBC5FFDC1CBB3A1C00843C93 /* iOSTestsUITests.xctest */,
 				BBA51DEB1CBF2F4000CB6602 /* testTodayExtension.appex */,
+				BBA51E221CBF5C3200CB6602 /* testShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,6 +410,23 @@
 			productReference = BBA51DEB1CBF2F4000CB6602 /* testTodayExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		BBA51E211CBF5C3200CB6602 /* testShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBA51E2E1CBF5C3200CB6602 /* Build configuration list for PBXNativeTarget "testShareExtension" */;
+			buildPhases = (
+				BBA51E1E1CBF5C3200CB6602 /* Sources */,
+				BBA51E1F1CBF5C3200CB6602 /* Frameworks */,
+				BBA51E201CBF5C3200CB6602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testShareExtension;
+			productName = testShareExtension;
+			productReference = BBA51E221CBF5C3200CB6602 /* testShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BBC5FFB71CBB3A1C00843C93 /* iOSTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBC5FFE51CBB3A1C00843C93 /* Build configuration list for PBXNativeTarget "iOSTests" */;
@@ -369,6 +440,7 @@
 			);
 			dependencies = (
 				BBA51DF81CBF2F4000CB6602 /* PBXTargetDependency */,
+				BBA51E2C1CBF5C3200CB6602 /* PBXTargetDependency */,
 			);
 			name = iOSTests;
 			productName = iOSTests;
@@ -429,6 +501,15 @@
 							};
 						};
 					};
+					BBA51E211CBF5C3200CB6602 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = NMNS9797GL;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					BBC5FFB71CBB3A1C00843C93 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = NMNS9797GL;
@@ -465,6 +546,7 @@
 				BBC5FFD01CBB3A1C00843C93 /* iOSTestsTests */,
 				BBC5FFDB1CBB3A1C00843C93 /* iOSTestsUITests */,
 				BBA51DEA1CBF2F4000CB6602 /* testTodayExtension */,
+				BBA51E211CBF5C3200CB6602 /* testShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -475,6 +557,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBA51DF51CBF2F4000CB6602 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA51E201CBF5C3200CB6602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA51E291CBF5C3200CB6602 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +607,22 @@
 				BBA51DF21CBF2F4000CB6602 /* TodayViewController.m in Sources */,
 				BBA51E131CBF2F9600CB6602 /* MMWormholeFileTransiting.m in Sources */,
 				BBA51E191CBF2F9600CB6602 /* MMWormholeSessionFileTransiting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA51E1E1CBF5C3200CB6602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA51E351CBF613A00CB6602 /* MMWormholeSession.m in Sources */,
+				BBA51E331CBF613A00CB6602 /* MMWormholeCoordinatedFileTransiting.m in Sources */,
+				BBA51E381CBF613A00CB6602 /* MMWormholeSessionMessageTransiting.m in Sources */,
+				BBA51E361CBF613A00CB6602 /* MMWormholeSessionContextTransiting.m in Sources */,
+				BBA51E3B1CBF696200CB6602 /* ShareTestViewController.m in Sources */,
+				BBA51E321CBF612D00CB6602 /* MMWormhole.m in Sources */,
+				BBA51E261CBF5C3200CB6602 /* ShareViewController.m in Sources */,
+				BBA51E341CBF613A00CB6602 /* MMWormholeFileTransiting.m in Sources */,
+				BBA51E371CBF613A00CB6602 /* MMWormholeSessionFileTransiting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +676,11 @@
 			target = BBA51DEA1CBF2F4000CB6602 /* testTodayExtension */;
 			targetProxy = BBA51DF71CBF2F4000CB6602 /* PBXContainerItemProxy */;
 		};
+		BBA51E2C1CBF5C3200CB6602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBA51E211CBF5C3200CB6602 /* testShareExtension */;
+			targetProxy = BBA51E2B1CBF5C3200CB6602 /* PBXContainerItemProxy */;
+		};
 		BBC5FFD31CBB3A1C00843C93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BBC5FFB71CBB3A1C00843C93 /* iOSTests */;
@@ -587,6 +698,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				BBA51DF41CBF2F4000CB6602 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		BBA51E271CBF5C3200CB6602 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBA51E281CBF5C3200CB6602 /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -629,6 +748,30 @@
 				INFOPLIST_FILE = testTodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xianghui.iOSTests.testTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BBA51E2F1CBF5C3200CB6602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = testShareExtension/testShareExtension.entitlements;
+				INFOPLIST_FILE = testShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xianghui.iOSTests.testShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BBA51E301CBF5C3200CB6602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = testShareExtension/testShareExtension.entitlements;
+				INFOPLIST_FILE = testShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xianghui.iOSTests.testShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -798,6 +941,14 @@
 			buildConfigurations = (
 				BBA51DFA1CBF2F4000CB6602 /* Debug */,
 				BBA51DFB1CBF2F4000CB6602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BBA51E2E1CBF5C3200CB6602 /* Build configuration list for PBXNativeTarget "testShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBA51E2F1CBF5C3200CB6602 /* Debug */,
+				BBA51E301CBF5C3200CB6602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
