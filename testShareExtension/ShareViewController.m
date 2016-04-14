@@ -22,13 +22,13 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    NSArray *items = self.extensionContext.inputItems;
+//    NSArray *items = self.extensionContext.inputItems;
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 100, 50)];
-    btn.backgroundColor = [UIColor redColor];
-    [btn addTarget:self action:@selector(didSelectPost) forControlEvents:UIControlEventTouchUpInside];
-    btn.center = self.view.center;
-    [self.view addSubview:btn];
+//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 100, 50)];
+//    btn.backgroundColor = [UIColor redColor];
+//    [btn addTarget:self action:@selector(didSelectPost) forControlEvents:UIControlEventTouchUpInside];
+//    btn.center = self.view.center;
+//    [self.view addSubview:btn];
     
     self.placeholder = @"testshare";
     
@@ -45,7 +45,7 @@
 - (BOOL)isContentValid {
     // Do validation of contentText and/or NSExtensionContext attachments here
     
-    NSArray *items = self.extensionContext.inputItems;
+//    NSArray *items = self.extensionContext.inputItems;
     
     return YES;
 }

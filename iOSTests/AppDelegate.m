@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XHSpotlightHelper.h"
 
 @interface AppDelegate ()
 
@@ -40,6 +41,17 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler{
+    
+    
+    NSString *idetifier = userActivity.userInfo[@"kCSSearchableItemActivityIdentifier"];
+    
+    [[XHSpotlightHelper sharedLogHelper] userActivityWithIdentifier:idetifier];
+    
+    return YES;
 }
 
 @end

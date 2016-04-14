@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TestCommon.h"
 #import "XHLogHelper.h"
+#import "XHSpotlightHelper.h"
 #import "MMWormhole.h"
 #import "MMWormholeSession.h"
 
@@ -38,6 +39,7 @@
     }];
     
     [self initWormhole];
+    [self initSpotlight];
 }
 
 - (void)initWormhole{
@@ -87,6 +89,25 @@
 }
 
 
+- (void)initSpotlight{
+    
+    
+    NSArray *titles = @[@"RunTime",@"GCD",@"KVO",@"Block",@"RunLoop"];
+    for (NSString *title in titles) {
+        NSString *desc = [title stringByAppendingString:@"==== desc"];
+        
+        
+        [[XHSpotlightHelper sharedLogHelper] saveDataWithUniqueIdentifier:[title stringByAppendingString:@"_id"] domainIdentifier:@"com.xh.test" title:title description:desc thumbImage:[UIImage imageNamed:@"test"]];
+    }
+    
+    
+    [[XHSpotlightHelper sharedLogHelper] setBlock:^(NSString *identifier){
+        NSString *title = [[identifier componentsSeparatedByString:@"_"] firstObject];
+        if ([titles containsObject:title]) {
+            [self testIndex:[titles indexOfObject:title]];
+        }
+    }];
+}
 
 - (IBAction)rightBarDidClicked:(id)sender {
     

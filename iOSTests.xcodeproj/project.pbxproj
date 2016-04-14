@@ -37,6 +37,10 @@
 		BBA51E381CBF613A00CB6602 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E0C1CBF2F9600CB6602 /* MMWormholeSessionMessageTransiting.m */; };
 		BBA51E3B1CBF696200CB6602 /* ShareTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E3A1CBF696200CB6602 /* ShareTestViewController.m */; };
 		BBA51E3D1CBF6D4900CB6602 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA51E3C1CBF6D4900CB6602 /* MobileCoreServices.framework */; };
+		BBA51E401CBF7EE800CB6602 /* XHSpotlightHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E3F1CBF7EE800CB6602 /* XHSpotlightHelper.m */; };
+		BBA51E421CBF7FF600CB6602 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA51E411CBF7FF600CB6602 /* CoreSpotlight.framework */; };
+		BBA51E431CBF811200CB6602 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA51E3C1CBF6D4900CB6602 /* MobileCoreServices.framework */; };
+		BBA51E451CBF83B100CB6602 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA51E441CBF83B100CB6602 /* test.png */; };
 		BBC500071CBB545700843C93 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500041CBB545700843C93 /* GCDTest.m */; };
 		BBC500081CBB545700843C93 /* RuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500061CBB545700843C93 /* RuntimeTest.m */; };
 		BBC5000B1CBB549C00843C93 /* KVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5000A1CBB549C00843C93 /* KVOTest.m */; };
@@ -135,6 +139,10 @@
 		BBA51E391CBF696200CB6602 /* ShareTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareTestViewController.h; sourceTree = "<group>"; };
 		BBA51E3A1CBF696200CB6602 /* ShareTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareTestViewController.m; sourceTree = "<group>"; };
 		BBA51E3C1CBF6D4900CB6602 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BBA51E3E1CBF7EE800CB6602 /* XHSpotlightHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSpotlightHelper.h; sourceTree = "<group>"; };
+		BBA51E3F1CBF7EE800CB6602 /* XHSpotlightHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSpotlightHelper.m; sourceTree = "<group>"; };
+		BBA51E411CBF7FF600CB6602 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		BBA51E441CBF83B100CB6602 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		BBC500031CBB545700843C93 /* GCDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
 		BBC500041CBB545700843C93 /* GCDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
 		BBC500051CBB545700843C93 /* RuntimeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTest.h; sourceTree = "<group>"; };
@@ -193,6 +201,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA51E431CBF811200CB6602 /* MobileCoreServices.framework in Frameworks */,
+				BBA51E421CBF7FF600CB6602 /* CoreSpotlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +226,7 @@
 		BBA51DEC1CBF2F4000CB6602 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBA51E411CBF7FF600CB6602 /* CoreSpotlight.framework */,
 				BBA51E3C1CBF6D4900CB6602 /* MobileCoreServices.framework */,
 				BBA51DED1CBF2F4000CB6602 /* NotificationCenter.framework */,
 			);
@@ -365,6 +376,9 @@
 				BBC5FFEF1CBB3A4600843C93 /* C */,
 				BBC5000C1CBB7D3800843C93 /* XHLogHelper.h */,
 				BBC5000D1CBB7D3800843C93 /* XHLogHelper.m */,
+				BBA51E3E1CBF7EE800CB6602 /* XHSpotlightHelper.h */,
+				BBA51E3F1CBF7EE800CB6602 /* XHSpotlightHelper.m */,
+				BBA51E441CBF83B100CB6602 /* test.png */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -575,6 +589,7 @@
 				BBC5FFCB1CBB3A1C00843C93 /* LaunchScreen.storyboard in Resources */,
 				BBC5FFC81CBB3A1C00843C93 /* Assets.xcassets in Resources */,
 				BBC5FFC61CBB3A1C00843C93 /* Main.storyboard in Resources */,
+				BBA51E451CBF83B100CB6602 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +645,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA51E401CBF7EE800CB6602 /* XHSpotlightHelper.m in Sources */,
 				BBA51E181CBF2F9600CB6602 /* MMWormholeSessionFileTransiting.m in Sources */,
 				BBC5FFC31CBB3A1C00843C93 /* ViewController.m in Sources */,
 				BBC500071CBB545700843C93 /* GCDTest.m in Sources */,
