@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XHSpotlightHelper.h"
+#import "XHNotificationHelper.h"
 
 @interface AppDelegate ()
 
@@ -44,6 +45,30 @@
 }
 
 
+// 本地通知回调函数，当应用程序在前台时调用
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"ReceiveLocalNotification  %@", notification.userInfo);
+    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    badge -= notification.applicationIconBadgeNumber;
+    badge = badge >= 0 ? badge : 0;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+}
+
+//在非本App界面时收到本地消息，下拉消息会有快捷回复的按钮，点击按钮后调用的方法，根据identifier来判断点击的哪个按钮，notification为消息内容
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void(^)())completionHandler
+{
+    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    badge -= notification.applicationIconBadgeNumber;
+    badge = badge >= 0 ? badge : 0;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+    
+    [[XHNotificationHelper sharedLogHelper] userActionWithIdentifier:identifier forLocalNotification:notification withResponseInfo:responseInfo];
+    completionHandler();
+}
+
+
+//Spotlight 搜索点击进入应用
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler{
     
     

@@ -10,6 +10,7 @@
 #import "TestCommon.h"
 #import "XHLogHelper.h"
 #import "XHSpotlightHelper.h"
+#import "XHNotificationHelper.h"
 #import "MMWormhole.h"
 #import "MMWormholeSession.h"
 
@@ -29,6 +30,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"test";
+    
+//    self.textView.keyboardAppearance = UIKeyboardAppearanceLight;
+    self.textView.keyboardAppearance = UIKeyboardAppearanceDark;
+    
     [[XHLogHelper sharedLogHelper] setLogBlock:^(NSString *logText){
         self.textView.text = [self.textView.text stringByAppendingString:logText];
         
@@ -92,7 +97,7 @@
 - (void)initSpotlight{
     
     
-    NSArray *titles = @[@"RunTime",@"GCD",@"KVO",@"Block",@"RunLoop"];
+    NSArray *titles = @[@"RunTime",@"GCD",@"KVO",@"Block",@"RunLoop",@"Notification"];
     for (NSString *title in titles) {
         NSString *desc = [title stringByAppendingString:@"==== desc"];
         
@@ -111,16 +116,14 @@
 
 - (IBAction)rightBarDidClicked:(id)sender {
     
-    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"test" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:nil otherButtonTitles:@"RunTime",@"GCD",@"KVO",@"Block",@"RunLoop", nil];
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"test" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:nil otherButtonTitles:@"RunTime",@"GCD",@"KVO",@"Block",@"RunLoop",@"Notification", nil];
     [sheet showInView:self.view];
 
 }
 
 - (IBAction)leftBarDidClicked:(id)sender {
+    [self.view endEditing:YES];
     self.textView.text = @"";
-    
-    
-    [self.traditionalWormhole passMessageObject:@{@"index" : @(0)} identifier:@"test"];
 }
 
 
@@ -134,7 +137,7 @@
 }
 
 - (void)testIndex:(NSInteger)index{
-    NSArray *titles = @[@"RunTime",@"GCD",@"KVO",@"Block",@"RunLoop"];
+    NSArray *titles = @[@"RunTime",@"GCD",@"KVO",@"Block",@"RunLoop",@"Notification"];
     self.title = [titles objectAtIndex:index];
     
     NSLog(@"\n\n\n=====%@=====\n\n\n",self.title);
@@ -165,6 +168,11 @@
         case 4:
         {
             [[[RunLoopTest alloc] init] test];
+        }
+            break;
+        case 5:
+        {
+            [[[NotificationTest alloc] init] test];
         }
             break;
         default:

@@ -14,5 +14,6 @@
 #import "KVOTest.h"
 #import "BlockTest.h"
 #import "RunLoopTest.h"
+#import "NotificationTest.h"
 
 #endif /* TestCommon_h */

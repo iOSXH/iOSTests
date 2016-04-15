@@ -12,8 +12,20 @@ typedef void(^XHLogBlock)(NSString *LogText);
 
 @interface XHLogHelper : NSObject
 
+/**
+ *  @author xh, 16-04-14 18:04:41
+ *
+ *  单例
+ *
+ *  @return self
+ */
 + (id)sharedLogHelper;
 
+/**
+ *  @author xh, 16-04-14 18:04:00
+ *
+ *  block 有log时进行回调
+ */
 @property (nonatomic, copy) XHLogBlock logBlock;
 
 @end

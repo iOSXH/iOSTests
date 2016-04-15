@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB3030A71CC08784005DAB93 /* NotificationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3030A61CC08784005DAB93 /* NotificationTest.m */; };
 		BBA51DEE1CBF2F4000CB6602 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA51DED1CBF2F4000CB6602 /* NotificationCenter.framework */; };
 		BBA51DF21CBF2F4000CB6602 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51DF11CBF2F4000CB6602 /* TodayViewController.m */; };
 		BBA51DF51CBF2F4000CB6602 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA51DF31CBF2F4000CB6602 /* MainInterface.storyboard */; };
@@ -41,6 +42,7 @@
 		BBA51E421CBF7FF600CB6602 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA51E411CBF7FF600CB6602 /* CoreSpotlight.framework */; };
 		BBA51E431CBF811200CB6602 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA51E3C1CBF6D4900CB6602 /* MobileCoreServices.framework */; };
 		BBA51E451CBF83B100CB6602 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA51E441CBF83B100CB6602 /* test.png */; };
+		BBA51E481CBFA31500CB6602 /* XHNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA51E471CBFA31500CB6602 /* XHNotificationHelper.m */; };
 		BBC500071CBB545700843C93 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500041CBB545700843C93 /* GCDTest.m */; };
 		BBC500081CBB545700843C93 /* RuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC500061CBB545700843C93 /* RuntimeTest.m */; };
 		BBC5000B1CBB549C00843C93 /* KVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC5000A1CBB549C00843C93 /* KVOTest.m */; };
@@ -107,6 +109,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB3030A51CC08784005DAB93 /* NotificationTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationTest.h; sourceTree = "<group>"; };
+		BB3030A61CC08784005DAB93 /* NotificationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationTest.m; sourceTree = "<group>"; };
 		BBA51DEB1CBF2F4000CB6602 /* testTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA51DED1CBF2F4000CB6602 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		BBA51DF01CBF2F4000CB6602 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 		BBA51E3F1CBF7EE800CB6602 /* XHSpotlightHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSpotlightHelper.m; sourceTree = "<group>"; };
 		BBA51E411CBF7FF600CB6602 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
 		BBA51E441CBF83B100CB6602 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		BBA51E461CBFA31500CB6602 /* XHNotificationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNotificationHelper.h; sourceTree = "<group>"; };
+		BBA51E471CBFA31500CB6602 /* XHNotificationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNotificationHelper.m; sourceTree = "<group>"; };
 		BBC500031CBB545700843C93 /* GCDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
 		BBC500041CBB545700843C93 /* GCDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
 		BBC500051CBB545700843C93 /* RuntimeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTest.h; sourceTree = "<group>"; };
@@ -284,6 +290,8 @@
 		BBC500021CBB545700843C93 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				BB3030A51CC08784005DAB93 /* NotificationTest.h */,
+				BB3030A61CC08784005DAB93 /* NotificationTest.m */,
 				BBC500121CBB8D0800843C93 /* RunLoopTest.h */,
 				BBC500131CBB8D0800843C93 /* RunLoopTest.m */,
 				BBC5000F1CBB8C6B00843C93 /* BlockTest.h */,
@@ -378,6 +386,8 @@
 				BBC5000D1CBB7D3800843C93 /* XHLogHelper.m */,
 				BBA51E3E1CBF7EE800CB6602 /* XHSpotlightHelper.h */,
 				BBA51E3F1CBF7EE800CB6602 /* XHSpotlightHelper.m */,
+				BBA51E461CBFA31500CB6602 /* XHNotificationHelper.h */,
+				BBA51E471CBFA31500CB6602 /* XHNotificationHelper.m */,
 				BBA51E441CBF83B100CB6602 /* test.png */,
 			);
 			path = Tests;
@@ -647,6 +657,7 @@
 			files = (
 				BBA51E401CBF7EE800CB6602 /* XHSpotlightHelper.m in Sources */,
 				BBA51E181CBF2F9600CB6602 /* MMWormholeSessionFileTransiting.m in Sources */,
+				BB3030A71CC08784005DAB93 /* NotificationTest.m in Sources */,
 				BBC5FFC31CBB3A1C00843C93 /* ViewController.m in Sources */,
 				BBC500071CBB545700843C93 /* GCDTest.m in Sources */,
 				BBC500111CBB8C6B00843C93 /* BlockTest.m in Sources */,
@@ -664,6 +675,7 @@
 				BBA51E101CBF2F9600CB6602 /* MMWormholeCoordinatedFileTransiting.m in Sources */,
 				BBC5FFF51CBB3C2900843C93 /* Person.m in Sources */,
 				BBC5000E1CBB7D3800843C93 /* XHLogHelper.m in Sources */,
+				BBA51E481CBFA31500CB6602 /* XHNotificationHelper.m in Sources */,
 				BBC5FFBD1CBB3A1C00843C93 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -959,6 +971,7 @@
 				BBA51DFB1CBF2F4000CB6602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBA51E2E1CBF5C3200CB6602 /* Build configuration list for PBXNativeTarget "testShareExtension" */ = {
 			isa = XCConfigurationList;
@@ -967,6 +980,7 @@
 				BBA51E301CBF5C3200CB6602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBC5FFB31CBB3A1C00843C93 /* Build configuration list for PBXProject "iOSTests" */ = {
 			isa = XCConfigurationList;
